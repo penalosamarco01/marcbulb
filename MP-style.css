@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #081b29;
+  color: #ededed;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 0 7%;
+}
+
+.column h3,
+p {
+  padding-right: -80px;
+}
+
+/* Hero Section */
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img {
+  margin-top: 100px;
+  margin-left: 100px;
+  height: 350px;
+  width: 100%;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  background: transparent;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.header a {
+  color: #ededed;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.logo {
+  font-size: 30px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.logo_img {
+  display: flex;
+  height: 50px;
+  width: 60px;
+  float: left;
+  margin: 0;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: 0.3s;
+  vertical-align: top;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #d0bcab;
+}
+
+#blurryscroll {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  overflow: hidden;
+  position: fixed;
+  filter: blur(4px);
+}
+
+.navbar-fixed-top.scrolled {
+  background-color: #081b29 !important;
+  transition: background-color 200ms linear;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  height: 70vh;
+  padding: 0 7%;
+  margin-top: 100px;
+  margin-right: 50px;
+}
+.descriptions {
+  padding-right: 50px;
+  margin: auto;
+}
+.home-content h1 {
+  font-size: 110px;
+  margin-bottom: -50px;
+}
+
+span {
+  -webkit-text-stroke: 2px #ededed;
+  color: transparent;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+span:hover {
+  text-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+  -webkit-text-stroke: 1px whitesmoke;
+}
+.home-content h3 {
+  font-weight: 100px;
+  color: #d0bcab;
+  margin-top: 70px;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.home-content btn-box {
+  display: flex;
+  justify-content: space-between;
+  width: 245px;
+  height: 50px;
+}
+
+.btn-box {
+  margin-top: 30px;
+  padding: 10 12%;
+  display: inline-flex;
+}
+
+.btn-box a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 100%;
+  background: #d0bcab;
+  border: 2px solid #d0bcab;
+  border-radius: 25px;
+  font-size: 19px;
+  color: #081b29;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-right: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  justify-content: space-evenly;
+}
+
+.btn-box a:hover {
+  background-color: transparent;
+  border: 2px solid #d0bcab;
+  color: #d0bcab;
+}
+
+.portfolio h1 {
+  padding: 0 7%;
+  margin-top: 170px;
+  font-size: 50px;
+}
+
+.column img {
+  height: 600px;
+  width: auto;
+  overflow-x: hidden;
+  padding-top: 50px;
+}
